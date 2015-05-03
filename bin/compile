@@ -107,7 +107,8 @@ rm -rf $CACHE_DIR/.heroku
 mkdir -p $CACHE_DIR/.heroku
 mkdir $ROOT_DIR/src/app/templates
 mv $ROOT_DIR/src/app $CACHE_DIR/.heroku/
-mv $PROJECT/_build/html/* $CACHE_DIR/.heroku/app/templates/
+#mv $PROJECT/_build/html/* $CACHE_DIR/.heroku/app/templates/
+mv build/html/* $CACHE_DIR/.heroku/app/templates/
 cp -R $CACHE_DIR/.heroku .
 
 
